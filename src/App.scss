@@ -1,0 +1,24 @@
+@import url('./scss/main.scss');
+@import './scss/_variables';
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $gray-1;
+  font-family: $font-lato;
+  .pdf {
+    width: 794px;
+    height: 1122px;
+    display: flex;
+    flex-direction:row;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+   
+  }
+  button {
+    position: absolute;
+  }
+
+}

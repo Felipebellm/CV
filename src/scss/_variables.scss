@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/bebas-kai');
+$font-lato: "Lato", sans-serif;
+$font-bebaskai: 'Bebas Kai', sans-serif;
+
+
+
+$black: #000000;
+$white: #ffffff;
+
+$gray-1: mix($black, $white, 10%);
+$gray-2: mix($black, $white, 20%);
+$gray-3: mix($black, $white, 30%);
+$gray-4: mix($black, $white, 40%);
+$gray-5: mix($black, $white, 50%);
+$gray-6: mix($black, $white, 60%);
+$gray-7: mix($black, $white, 70%);
+$gray-8: mix($black, $white, 80%);
+$gray-9: mix($black, $white, 90%);
+
+

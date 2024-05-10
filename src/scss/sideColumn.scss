@@ -1,0 +1,84 @@
+@import './_variables';
+
+.sideColumn {
+    height: 100%;
+    width: 45%;
+    background-color: $gray-7;
+    color: $white;
+    .profile-block {
+        height: 16%;
+        display: flex;
+        // padding: 18%;
+        // margin:18%;
+        border-radius: 100%;
+        margin: 15% 0 10% 0;
+        display: flex;
+        justify-content: center;
+        .img-profile {
+            // object-fit: contain;
+            // margin: 10%
+            border-radius: 100%;
+        }
+    }
+    .title {
+        font-family: $font-bebaskai;
+        font-size: 24px;
+        
+    }
+    .aboutMe {
+        // background-color: $gray-6;
+        // height: 42%;
+        padding: 0 10% 5%;
+        // font-size: 10px;
+        
+        .title {
+            font-family: $font-bebaskai;
+            font-size: 24px;
+            
+        }
+        .textBody {
+            margin-top:5%;
+            font-size: 14.5px;
+            line-height: 1.2;
+        }
+    }
+    hr {
+        width: 90%;
+        float: right;
+        // height: 0.1%;
+        background-color: $gray-3;
+        border-color: $gray-3;
+    }
+    .knowledge {
+        padding: 10% 10% 10%;
+        .item {
+            // height: 18px;
+            margin-top: 4.5%;
+            line-height: 1;
+            .itemTitle {
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+            .itemFull {
+                width: 100%;
+                margin-top: 2%;
+                height: 4px;
+                background-color: $gray-4;
+                .itemLevel-1 { height: 100%; width: 20%; background-color: $white }
+                .itemLevel-2 { height: 100%; width: 40%; background-color: $white }
+                .itemLevel-3 { height: 100%; width: 60%; background-color: $white }
+                .itemLevel-4 { height: 100%; width: 80%; background-color: $white }
+                .itemLevel-5 { height: 100%; width: 100%; background-color: $white }
+            }
+        }
+    }
+    .knowledge.language {
+        padding-top: 0px;
+        margin-top: -10px;
+        .languageTitle {
+            font-family: $font-bebaskai;
+            font-size: 18px;
+        }
+    }
+
+}
