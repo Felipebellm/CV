@@ -17,8 +17,104 @@ body {
     margin-top: 15px;
    
   }
-  button {
+  button.pdfBtn {
     position: absolute;
+    top: 20px;
+    right: 0;
+    width: 150px;
+    height: 50px;
+    background-color: $gray-3;
+    border-radius: 25px 0px 0px 25px;
+    cursor: pointer;
+    color: $gray-8;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      color: $white;
+      background-color: $gray-6;
+      .downloadIcon{
+        background-color: green;
+        width: 28%;
+        height: 80%;
+        border-radius: 100%;
+      }
+      
+    }
+    .downloadIcon{
+      margin-right: 4%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $gray-6;
+      width: 28%;
+      height: 80%;
+      border-radius: 100%;
+      img{
+        display: flex;
+      }
+    }
+    
   }
 
+  .langSwitch {
+    cursor: pointer;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 60px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: $gray-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .circle {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 26px;
+      height: 26px;
+      border: 1px solid white;
+      overflow: hidden;
+      border-radius: 100px;
+      position: relative;
+      transition: .5s;
+      img {
+        position: absolute;
+        width: 70px;
+        height: 26px;
+        transition: .5s;
+      }
+      
+    }
+    .circle.pt {
+      left: -11px;
+      
+      img {
+        left: -9px;
+      }
+    }
+    .circle.en {
+      left: 11px;
+      img {
+        left: -35px;
+      }
+    }
+    
+    input{
+      display:none;
+    
+    }
+    // &:before{
+    //   display: block;
+    //   content: '';
+    //   background: green;
+    //   width: 100%;
+    //   height: 100%;
+      
+    //   border-radius: 50px;
+    // }
+  }
 }

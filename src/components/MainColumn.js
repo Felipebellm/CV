@@ -5,8 +5,12 @@ import Mail from '../icons/envelope.svg';
 import Linkedin from '../icons/linkedin.svg';
 import Github from '../icons/github.svg';
 import Location from '../icons/geo.svg';
+import { useTranslation } from 'react-i18next';
 
 function MainColumn() {
+
+  const { t } = useTranslation(); 
+
   return (
     <div className="mainColumn">
       <div className='header'>
@@ -18,8 +22,8 @@ function MainColumn() {
             </div>
           </div>
           <div className='personalInfo'>
-            <div>Idade:<i>  29 anos</i></div>
-            <div>Nacionalidade:<i>  Brasileiro</i></div>
+            {/* <div>{t('age')}:<i>  29 anos</i></div> */}
+            <div>{t('nationalityLabel')}: <i>{t('nationality')}</i></div>
             {/* <div>Estado Civil:<i>  Solteiro</i></div> */}
           </div>
         </div>
@@ -31,7 +35,7 @@ function MainColumn() {
               <img src={Location} />
             </div>
             <div className='text'>
-              Rua Benedito da Cunha Campos, número 573, Mogi Mirim -São Paulo-SP, Mogi Mirim, 13806610, Brazil
+              {t('location')}
             </div>
           </div>
 
@@ -77,42 +81,24 @@ function MainColumn() {
 
       <div className='bodyContent'>
 
-        <div className='title'>EXPERIÊNCIA PROFISSIONAL</div>
+        <div className='title'>{t('professionalEx')}</div>
         <hr></hr>
 
         <div className='body'>
 
           <div className='item'>
-
-            <div className='itemTitle'>
-              Autônomo
-              <div className='date'>
-                jan 2012 - dez 2012
-              </div>
-            </div>
-
-            <div className='role'>
-                Professor de Informática Particular
-                <div className='description'>
-                  Lecionando informática básica
-                </div>
-              </div>
-
-          </div>
-
-          <div className='item'>
             
             <div className='itemTitle'>
-              Autônomo
+              {t('selfEmployed')}
               <div className='date'>
                 jan 2012 - dez 2014
               </div>
             </div>
 
             <div className='role'>
-              Técnico em Informática
+              {t('techIT')}
               <div className='description'>
-                Manutenção de Computadores e Sistemas Operacionais
+                {t('descTechIT')}
               </div>
             </div>
 
@@ -123,14 +109,14 @@ function MainColumn() {
             <div className='itemTitle'>
               IBM, Hortolândia
               <div className='date'>
-                jan 2014 - jun 2016
+                nov 2014 - jun 2016
               </div>
             </div>
 
             <div className='role'>
-              Analista de Desenvolvimento em Main Frame.
+              {t('ibmRole')}
               <div className='description'>
-              Desenvolver e testar sistemas em COBOL e JCL – Main Frame.
+                {t('descIbmRole')}
               </div>
             </div>
 
@@ -146,9 +132,9 @@ function MainColumn() {
             </div>
 
             <div className='role'>
-              Técnico de Campo
+              {t('fildTech')}
               <div className='description'>
-                Gerenciamento de Infraestrutura de Data Center.
+                {t('descFildTech')}
               </div>
             </div>
 
@@ -164,9 +150,27 @@ function MainColumn() {
             </div>
 
             <div className='role'>
-              Desenvolvedor Full-Stack
+              {t('fullStack')}
               <div className='description'>
-                Desenvolver, testar e analisar aplicações Web
+                {t('descFullStack')}
+              </div>
+            </div>
+
+          </div>
+
+          <div className='item'>
+            
+            <div className='itemTitle'>
+              {t('selfEmployed')}
+              <div className='date'>
+                jul 2023 - Atuando
+              </div>
+            </div>
+
+            <div className='role'>
+              {t('fullStackSelf')}
+              <div className='description'>
+                {t('descFullStackSelf')}
               </div>
             </div>
 
@@ -174,7 +178,7 @@ function MainColumn() {
          
         </div>
 
-        <div className='title'>FORMAÇÃO</div>
+        <div className='title'>{t('education')}</div>
         <hr></hr>
 
         <div className='body'>
@@ -184,12 +188,12 @@ function MainColumn() {
             <div className='itemTitle'>
               ETEC. Pedro Ferreira Alves
               <div className='date'>
-                jan 2012 - dez 2012
+                jan 2011 - jul 2012
               </div>
             </div>
 
             <div className='role'>
-              Técnico de Informática com ênfase Internet
+              {t('techFormation')}
               <div className='description'></div>
                 
               </div>
@@ -201,38 +205,68 @@ function MainColumn() {
             <div className='itemTitle'>
               ETEC. Pedro Ferreira Alves
               <div className='date'>
-                jan 2012 - dez 2014
+                jan 2011 - dez 2013
               </div>
             </div>
 
             <div className='role'>
-            Ensino médio
+            {t('regularFormation')}
+            <div className='description'></div>
+            </div>
+
+          </div>
+          <div className='item'>
+            
+            <div className='itemTitle'>
+              METROCAMP
+              <div className='date'>
+                jan 2014 - dez 2017
+              </div>
+            </div>
+
+            <div className='role'>
+            {t('cumputerScience')}
+            <div className='description'>{t('descCumputerScience')}</div>
+            </div>
+
+          </div>
+
+          <div className='item'>
+            
+            <div className='itemTitle'>
+              ESTACIO
+              <div className='date'>
+                abr 2024 - Cursando
+              </div>
+            </div>
+
+            <div className='role'>
+            {t('tecFullStack')}
             <div className='description'></div>
             </div>
 
           </div>
         </div>
 
-        <div className='title'>PROJETOS</div>
+        <div className='title'>{t('projects')}</div>
         <hr></hr>
 
         <div className='body'>
           <ol className='list'>
-            <li>AT&T – Sistema de Cobrança, COBOL (IBM).</li>
-            <li>Banco Safra – Desenvolvimento do sistema principal, COBOL (IBM).</li>
-            <li>Itaú – Analista de Data center, suporte de campo (HP).</li>
-            <li>American Airlines – Desenvolvedor de aplicação Web, WordPress, PHP e AngularJS (Stefanini).</li>
-            <li>Edenred – Desenvolvedor de aplicação Web, Wordpress e PHP (Stefanini).</li>
-            <li>GSK – Designer Gráfico, UX e UI (Stefanini).</li>
-            <li>Red Asset – Desenvolvedor de aplicação Web, WordPress e PHP (Stefanini).</li>
-            <li>AdvanSix – Suporte de Aplicação Web, WordPress e PHP (Stefanini).</li>
-            <li>SourceLink – Desenvolvedor de migração de aplicação Web, PHP puro para Larevel Framework</li>
-            <li>(Stefanini).</li>
-            <li>Sesc – Desenvolvedor de aplicação Web, WordPress e PHP (Stefanini).</li>
-            <li>EDF – Desenvolvedor de aplicação Web, WordPress e PHP (Stefanini).</li>
-            <li>Alvarez and Marsal – Desenvolvedor de aplicação Web, DRUPAL e PHP (Stefanini).</li>
+            <li>{t('ibm1')}</li>
+            <li>{t('ibm2')}</li>
+            <li>{t('hp')}</li>
+            <li>{t('stef1')}</li>
+            <li>{t('stef2')}</li>
+            <li>{t('stef3')}</li>
+            <li>{t('stef4')}</li>
+            <li>{t('stef5')}</li>
+            <li>{t('stef6')}</li>
+            <li>{t('stef7')}</li>
+            <li>{t('stef8')}</li>
+            <li>{t('stef9')}</li>
           </ol>
-          <div className='credits'>Esse currículo foi criado com React</div>
+          <div className='credits'>{t('reactInfo')}</div>
         </div>
       </div>
     </div>
