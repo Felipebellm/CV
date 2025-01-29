@@ -163,7 +163,7 @@ function MainColumn() {
             <div className='itemTitle'>
               {t('selfEmployed')}
               <div className='date'>
-                jul 2023 - Atuando
+                jul 2023 - {t('atuando')}
               </div>
             </div>
 
@@ -181,14 +181,14 @@ function MainColumn() {
             <div className='itemTitle'>
               {t('suportAnalist')}
               <div className='date'>
-                dec 2024 - Atuando
+                dec 2024 - {t('atuando')}
               </div>
             </div>
 
             <div className='role'>
-              {t('fullStackSelf')}
+              {t('descSuportAnalist')}
               <div className='description'>
-                {t('descFullStackSelf')}
+                
               </div>
             </div>
 
@@ -254,7 +254,7 @@ function MainColumn() {
             <div className='itemTitle'>
               ESTACIO
               <div className='date'>
-                abr 2024 - Cursando
+                abr 2024 - {t('cursando')}
               </div>
             </div>
 

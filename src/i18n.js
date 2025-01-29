@@ -23,7 +23,9 @@ const resources = {
       fullStackSelf: "Desenvolvendo Sistema/Aplicações Web.",
       descFullStackSelf: "Desenvolvendo Projeos pessoais e de terceiros.",
       suportAnalist : "Analista de Suporte", 
-      descSuportAnalist : "Analista e resolver problemas de software e infraestrutura.", 
+      descSuportAnalist : "Analisar e resolver problemas de software e infraestrutura.", 
+      atuando: "Atuando",
+      cursando: "Cursando",
 
       education: "Formação",
       techFormation: "Técnico de Informática com ênfase Internet.",
@@ -77,6 +79,11 @@ const resources = {
       descFullStack: "Develop, test and analyze web applications.",
       fullStackSelf: "Developing System/Web Applications.",
       descFullStackSelf: "Developing personal and third-party projects.", 
+      suportAnalist : "Suport Analist", 
+      descSuportAnalist : "Analyze and resolve software and infrastructure issues.", 
+      atuando: "Current",
+      cursando: "Current",
+
     
       education: "Education",
       techFormation: "Computer Technician with Internet emphasis.",
