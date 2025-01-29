@@ -175,6 +175,24 @@ function MainColumn() {
             </div>
 
           </div>
+
+          <div className='item'>
+            
+            <div className='itemTitle'>
+              {t('suportAnalist')}
+              <div className='date'>
+                dec 2024 - Atuando
+              </div>
+            </div>
+
+            <div className='role'>
+              {t('fullStackSelf')}
+              <div className='description'>
+                {t('descFullStackSelf')}
+              </div>
+            </div>
+
+          </div>
          
         </div>
 
@@ -265,6 +283,7 @@ function MainColumn() {
             <li>{t('stef7')}</li>
             <li>{t('stef8')}</li>
             <li>{t('stef9')}</li>
+            <li>{t('auto')}</li>
           </ol>
           <div className='credits'>{t('reactInfo')}</div>
         </div>

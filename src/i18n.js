@@ -21,7 +21,9 @@ const resources = {
       fullStack: "Desenvolvedor Full-Stack.",
       descFullStack: "Desenvolver, testar e analisar aplicações Web.",
       fullStackSelf: "Desenvolvendo Sistema/Aplicações Web.",
-      descFullStackSelf: "Desenvolvendo Projeos pessoais e de terceiros.", 
+      descFullStackSelf: "Desenvolvendo Projeos pessoais e de terceiros.",
+      suportAnalist : "Analista de Suporte", 
+      descSuportAnalist : "Analista e resolver problemas de software e infraestrutura.", 
 
       education: "Formação",
       techFormation: "Técnico de Informática com ênfase Internet.",
@@ -43,6 +45,7 @@ const resources = {
       stef7: "Sesc – Desenvolvedor de aplicação Web, WordPress e PHP (Stefanini).",
       stef8: "EDF – Desenvolvedor de aplicação Web, WordPress e PHP (Stefanini).",
       stef9: "Alvarez and Marsal – Desenvolvedor de aplicação Web, DRUPAL e PHP (Stefanini).",
+      auto: "Projeto Próprio - Criação de um MVP próprio em PHP",
     
       aboutMe: "Sobre Mim",
       TextAboutMe: "Especialista em desenvolvimento web com competência em WordPress, PHP, AngularJS, Laravel, React e Node.js com vasta experiência em projetos de empresas líderes no mercado como American Airlines e EDF via Stefanini. Possuo habilidades avançadas em design UX/UI adquiridas através do desenvolvimento de aplicações web. Estou ansioso para integrar sua equipe.",
@@ -95,6 +98,7 @@ const resources = {
       stef7: "Sesc – WordPress and PHP Web application developer (Stefanini).",
       stef8: "EDF – Web application developer, WordPress and PHP (Stefanini).",
       stef9: "Alvarez and Marsal – Web application developer, DRUPAL and PHP (Stefanini).",
+      auto: "My Own Project - Creation of your own MVP in PHP",
 
       aboutMe: "About Me",
       TextAboutMe: "Specialist in web development with expertise in WordPress, PHP, AngularJS, Laravel, React, and Node.js, with extensive experience in projects for leading companies such as American Airlines and EDF via Stefanini. I have advanced UX/UI design skills acquired through the development of web applications. I am eager to join your team.",

@@ -145,6 +145,15 @@ function SideColumn() {
           </div>
         </div>
 
+        <div className='item'>
+          <div className='itemTitle'>
+            Ruby On Rails
+          </div>
+          <div className='itemFull'>
+            <div className='itemLevel-2'></div>
+          </div>
+        </div>
+
       </div>
 
 
